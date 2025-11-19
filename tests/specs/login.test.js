@@ -4,6 +4,7 @@ const InventoryPage = require("../pageobjects/inventoryPage");
 async function clearValue(input) {
   await input.click();
   await browser.keys(["Control", "a"]);
+  await browser.keys(["Command", "a"]);
   await browser.keys(["Backspace"]);
 }
 
